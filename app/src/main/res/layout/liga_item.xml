@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    tools:context="com.ani.liga.MainActivity">
+    
+    <ImageView
+        android:id="@+id/imgstrTeamBadge"
+        android:layout_width="140dp"
+        android:layout_height="130dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"/>
+    <TextView
+        android:id="@+id/tvidTeam"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_toRightOf="@id/imgstrTeamBadge"
+        android:layout_toEndOf="@id/imgstrTeamBadge"
+        android:textColor="#00574B"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:maxLines="3"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        tools:text="Team"/>
+    <Button
+        android:id="@+id/btndetail"
+        android:layout_width="155dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/imgstrTeamBadge"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/imgstrTeamBadge"
+        android:layout_toEndOf="@id/imgstrTeamBadge"
+        android:text="@string/league"
+        />
+
+</RelativeLayout>
